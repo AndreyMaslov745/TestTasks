@@ -1,0 +1,251 @@
+{
+	"info": {
+		"_postman_id": "cfa5a3a1-6251-4754-9614-2b0b02819d2c",
+		"name": "OkRequests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23481696"
+	},
+	"item": [
+		{
+			"name": "RegistrationRequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"new user\",\r\n  \"password\": \"new password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7037/api/Auth/register",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7037",
+					"path": [
+						"api",
+						"Auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LoginRequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"Anna2001\",\r\n  \"password\": \"qwerty123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7037/api/Auth/login",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7037",
+					"path": [
+						"api",
+						"Auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserAllOrdersRequest",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTUxMiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiQW5uYTIwMDEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJVc2VyIiwiZXhwIjoxNjY0MjI2NjQ0fQ.cp8iTi9vbI8c-cMN3MLKjdR-tYRqjmFwVhRmY0Ek46EjTD00r8S6hQra8xpRsKQ9SWA8SUarkfanKhFArFmMVA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7037/api/User/Orders",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7037",
+					"path": [
+						"api",
+						"User",
+						"Orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserOrderInfo",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTUxMiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiQW5uYTIwMDEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJVc2VyIiwiZXhwIjoxNjY0MjI2NjQ0fQ.cp8iTi9vbI8c-cMN3MLKjdR-tYRqjmFwVhRmY0Ek46EjTD00r8S6hQra8xpRsKQ9SWA8SUarkfanKhFArFmMVA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7037/api/User/Orders/4",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7037",
+					"path": [
+						"api",
+						"User",
+						"Orders",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AdminLoginRequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"admin\",\r\n  \"password\": \"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7037/api/Auth/login",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7037",
+					"path": [
+						"api",
+						"Auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AdminUserInfoRequest",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTUxMiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTY2NDIyNjY5NH0.Wsjo9pyt5YQMGJOjRbanN65K76dgkQtI6MbC7CCrrzLOGI2z1nwRLCsoscBtVN4pEVgCuorYxJvaFnVvGrEFlw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7037/api/Admin/UserInfo/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7037",
+					"path": [
+						"api",
+						"Admin",
+						"UserInfo",
+						"1"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AdminOrderInfoRequest",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTUxMiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTY2NDIyNjY5NH0.Wsjo9pyt5YQMGJOjRbanN65K76dgkQtI6MbC7CCrrzLOGI2z1nwRLCsoscBtVN4pEVgCuorYxJvaFnVvGrEFlw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7037/api/Admin/OrdersInfo?date&product_id=&min_price=&max_price=",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7037",
+					"path": [
+						"api",
+						"Admin",
+						"OrdersInfo"
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": null
+						},
+						{
+							"key": "product_id",
+							"value": ""
+						},
+						{
+							"key": "min_price",
+							"value": ""
+						},
+						{
+							"key": "max_price",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
